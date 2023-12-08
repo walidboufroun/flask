@@ -9,7 +9,14 @@ def index():
     #return render_template('index.html')
     return 'welcome page'
    
-@app.
+@app.route('/image')
+def image():
+    return 'IMAGE PAGE' 
+
+@app.route('/resultat')
+def resultat():
+    return 'Resulatat'
+
 @app.route('/gnov-image', methods=['GET'])
 def get_gnov_image():
     # Assuming you want to provide some image data in response
