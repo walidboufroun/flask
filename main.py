@@ -17,6 +17,13 @@ def image():
 def resultat():
     return 'Resulatat'
 
+@app.route('/calcul')
+def calcul():
+    number1 = 2 
+    number2 = 3 
+    number3 = number1 + number2 
+    return number3
+
 @app.route('/gnov-image', methods=['GET'])
 def get_gnov_image():
     # Assuming you want to provide some image data in response
