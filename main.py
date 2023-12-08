@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     # Use render_template to render an HTML template
     #return render_template('index.html')
-    message = "<!DOCTYPE html><html><head>    <title>Flask App</title></head><body>    <h1>Welcome GNOV, Je suis un serveur gratuit avec python</h1>    <!-- Add a button to navigate to the /image route -->    <a href="https://flask-production-7a55.up.railway.app/image"><button>Go to /image</button></a>    </body></html>"
+    message = '<!DOCTYPE html><html><head><title>Flask App</title></head><body><h1>Welcome GNOV, Je suis un serveur gratuit avec python</h1><!-- Add a button to navigate to the /image route --><a href="https://flask-production-7a55.up.railway.app/image"><button>Go to /image</button></a></body></html>'
     #message = "walid"
     return message
    
