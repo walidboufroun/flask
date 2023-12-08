@@ -14,7 +14,7 @@ def index():
 @app.route('/image')
 def image():
     image = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title></head><body><h1>Hello World !</h1><form action="\resultat" method="post"><label for="file">Upload your pic</label><input type="file" name="file"></form></body></html>'
-    return 'IMAGE PAGE' 
+    return image 
 
 @app.route('/resultat')
 def resultat():
