@@ -18,7 +18,7 @@ def resultat():
     return 'Resulatat'
 
 @app.route('/calcul')
-def calcul():
+def calcule():
     number1 = 2 
     number2 = 3 
     number3 = number1 + number2 
