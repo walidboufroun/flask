@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Use render_template to render an HTML template
-    return render_template('index.html')
+    #return render_template('index.html')
+    return 'welcome'
 
 @app.route('/image', methods=['POST'])
 def upload_image():
