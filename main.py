@@ -7,8 +7,9 @@ app = Flask(__name__)
 def index():
     # Use render_template to render an HTML template
     #return render_template('index.html')
-    return render_template('index.html')
-
+    return 'welcome page'
+   
+@app.
 @app.route('/gnov-image', methods=['GET'])
 def get_gnov_image():
     # Assuming you want to provide some image data in response
