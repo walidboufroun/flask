@@ -18,7 +18,10 @@ def image():
 
 @app.route('/resultat')
 def resultat():
-    input_data = request.form['file']
+    if request.method == 'POST':
+        input_data = request.form['file']
+    else :
+        print("L'image na pas reconu")
     return 'Image uploaded'
 
 @app.route('/calcul')
