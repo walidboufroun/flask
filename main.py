@@ -7,7 +7,18 @@ app = Flask(__name__)
 def index():
     # Use render_template to render an HTML template
     #return render_template('index.html')
-    return 'welcome page'
+    message = "<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Welcome GNOV, Je suis un serveur gratuit avec python</h1>
+    <!-- Add a button to navigate to the /image route -->
+    <a href="{{ url_for('upload_image') }}"><button>Go to /image</button></a>
+</body>
+</html>"
+    return message
    
 @app.route('/image')
 def image():
