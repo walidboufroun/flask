@@ -1,11 +1,12 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, render_template
 import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Welcome GNOV, Je suis un serveur gratuit avec python'
+    # Use render_template to render an HTML template
+    return render_template('index.html')
 
 @app.route('/image', methods=['POST'])
 def upload_image():
