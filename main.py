@@ -9,16 +9,6 @@ def index():
     #return render_template('index.html')
     return 'welcome'
 
-@app.route('/image', methods=['POST'])
-def upload_image():
-    # Assuming you want to handle image uploads here
-    # Access the uploaded file using request.files
-    uploaded_file = request.files['file']
-    
-    # Process the uploaded file as needed
-    # You can save it, analyze it, etc.
-
-    return jsonify({"message": "Image uploaded successfully"})
 
 @app.route('/gnov-image', methods=['GET'])
 def get_gnov_image():
