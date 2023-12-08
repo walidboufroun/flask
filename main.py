@@ -18,7 +18,8 @@ def image():
 
 @app.route('/resultat')
 def resultat():
-    return 'Resulatat'
+    input_data = request.form['file']
+    return 'Image uploaded'
 
 @app.route('/calcul')
 def calcule():
